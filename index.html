@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom List Marker Using Tailwind</title>
+    <link rel="stylesheet" href="./assets/dist-style.css">
+  </head>
+  <body>
+    <main class="max-w-screen-md mx-auto px-4">
+        <h1 class="font-bold text-center text-3xl mb-4">Simple Responsive Form</h1>  
+
+        <form>
+          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 mb-4">
+            <div class="md:mb-4 flex flex-col col-span-2 md:col-span-1">
+              <label class="pb-1" for="f_name">First name (required):</label>
+              <input type="text" name="f_name" id="f_name" required>
+            </div>
+
+            <div class="md:mb-4 flex flex-col col-span-2 md:col-span-1">
+              <label class="pb-1" for="l_name">Last name  (required):</label>
+              <input type="text" name="l_name" id="l_name" required>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 md:gap-8 gap-4 mb-4">
+            <div class="md:mb-4 flex flex-col col-span-3 md:col-span-2">
+              <label class="pb-1" for="p_number">Phone number  (required):</label>
+              <input type="text" name="p_number" id="p_number" required>
+            </div>
+
+            <div class="md:mb-4 flex flex-col col-span-3 md:col-span-1">
+              <label class="pb-1" for="contact_type">Contact Type (required):</label>
+              <select name="contact_type" id="contact_type" required>
+                <option value="default" disabled selected>Select contact type</option>
+                <option value="0" >Mobile</option>
+                <option value="1" >Home</option>
+                <option value="2" >Work</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="md:mb-4 flex flex-col mb-4">
+            <label class="pb-1" for="email">Email  (required):</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+
+          <div class="md:mb-4 flex flex-col mb-4">
+            <label class="pb-1" for="event_date">Event date (required):</label>
+            <input type="date" name="event_date" id="event_date" required>
+          </div>
+
+          <div class="md:mt-4">
+            <input class="w-full bg-gray-100 hover:bg:gray-200 bh-schedule-appointment-submit" type="submit" value="Book appointment">
+          </div>
+
+        </form>
+    </main>
+  </body>
+</html>
