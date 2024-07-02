@@ -5,14 +5,10 @@
 @layer base {
   input,
   select {
-    @apply border;
-    @apply rounded;
-    @apply p-2;
+    @apply border rounded p-2;
   }
   label {
-    @apply text-sm;
-    @apply font-semibold;
-    @apply uppercase;
+    @apply text-sm font-semibold uppercase pb-1;
   }
 }
 
